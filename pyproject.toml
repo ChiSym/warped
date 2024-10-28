@@ -1,0 +1,44 @@
+[project]
+authors = [
+    {name = "Karen Chung", email = "seoyeon@mit.edu"}, 
+    {name = "Aaron Steele", email = "asteel8@mit.edu"}
+]
+dependencies = []
+description = "NVIDIA Warp profiling."
+name = "warped"
+requires-python = ">= 3.11"
+version = "0.1.0"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pixi.system-requirements]
+cuda = "12.4"
+
+[tool.pixi.activation.env]
+LD_LIBRARY_PATH = "$PIXI_PROJECT_ROOT/.pixi/envs/default/lib"
+
+[tool.pixi.project]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tool.pixi.pypi-dependencies]
+warped = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+ncu-ui = { cmd = "ncu-ui --no-splash" }
+nsys-ui = { cmd = "nsys-ui" }
+
+[tool.pixi.dependencies]
+libopengl = ">=1.7.0,<2"
+xcb-util = ">=0.4.1,<0.5"
+xcb-util-cursor = ">=0.1.5,<0.2"
+libglx = ">=1.7.0,<2"
+libgl = ">=1.7.0,<2" 
+warp-lang = ">=1.4.1,<2"
+cuda-toolkit = ">=12.6.2,<13"
+libegl = ">=1.7.0,<2"
