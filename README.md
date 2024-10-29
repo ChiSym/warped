@@ -1,5 +1,5 @@
 # Examples
-We can run and profile all the [examples](https://github.com/NVIDIA/warp/tree/main/examples) in Warp. Let's go through the raycast bunny example!
+We can run and profile all the [examples](https://github.com/NVIDIA/warp/tree/main/warp/examples) in Warp. Let's go through the raycast bunny example!
 
 ## Raycast Bunny
 
