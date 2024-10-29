@@ -17,9 +17,4 @@ sudo ~/.pixi/bin/pixi run ncu \
   python -m warp.examples.core.example_raycast
 ```
 
-View the raycast bunny:
-```shell
-pixi run ncu-ui example_raycast_bunny
-```
-
 Then open the `example_raycast_bunny.ncu-rep` report from Nsight Compute UI!
