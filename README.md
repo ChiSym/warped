@@ -3,6 +3,8 @@ We can run and profile all the [examples](https://github.com/NVIDIA/warp/tree/ma
 
 ## Raycast Bunny
 
+<img src="https://github.com/user-attachments/assets/6ed61f6f-e07a-4e2f-b794-cad886594d4d" width="50%">
+
 Profile the [raycast bunny](https://github.com/NVIDIA/warp/tree/main/examples/core/example_raycast):
 ```shell
 sudo ~/.pixi/bin/pixi run ncu \
