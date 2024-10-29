@@ -3,7 +3,7 @@ authors = [
     {name = "Karen Chung", email = "seoyeon@mit.edu"}, 
     {name = "Aaron Steele", email = "asteel8@mit.edu"}
 ]
-dependencies = []
+dependencies = ["usd-core>=24.8,<25"]
 description = "NVIDIA Warp profiling."
 name = "warped"
 requires-python = ">= 3.11"
@@ -42,3 +42,5 @@ libgl = ">=1.7.0,<2"
 warp-lang = ">=1.4.1,<2"
 cuda-toolkit = ">=12.6.2,<13"
 libegl = ">=1.7.0,<2"
+matplotlib = ">=3.9.2,<4"
+pyglet = ">=1.5.27,<2"
