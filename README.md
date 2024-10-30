@@ -5,7 +5,7 @@ We can run and profile all the [examples](https://github.com/NVIDIA/warp/tree/ma
 
 <img src="https://github.com/user-attachments/assets/6ed61f6f-e07a-4e2f-b794-cad886594d4d" width="50%">
 
-Profile the [raycast bunny](https://github.com/NVIDIA/warp/blob/main/warp/examples/core/example_raycast.py):
+Profile the [raycast bunny](https://github.com/probcomp/warped/tree/main/examples/example_raycast.py):
 ```shell
 sudo ~/.pixi/bin/pixi run ncu \
   --set full \
@@ -14,7 +14,7 @@ sudo ~/.pixi/bin/pixi run ncu \
   --nvtx \
   --call-stack \
   --export example_raycast_bunny \
-  python -m warp.examples.core.example_raycast
+  python -m examples.example_raycast
 ```
 
 Then open the `example_raycast_bunny.ncu-rep` report from Nsight Compute UI.
