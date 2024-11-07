@@ -7,7 +7,7 @@ We can run and profile all the [examples](https://github.com/NVIDIA/warp/tree/ma
 
 Profile the [raycast bunny](https://github.com/probcomp/warped/tree/main/examples/example_raycast.py):
 ```shell
-sudo ~/.pixi/bin/pixi run ncu \
+ncu \
   --set full \
   --target-processes all \
   --metrics dram__bytes_read.sum,dram__bytes_written.sum,sm__inst_executed_pipe_tensor_op_hmma.avg,sm__cycles_elapsed.avg,l2_tex_read_bytes.sum,l2_tex_write_bytes.sum,lts__t_bytes.sum,lts__t_sectors_pipe_lsu_mem_rd.sum,lts__t_sectors_pipe_lsu_mem_wr.sum  \

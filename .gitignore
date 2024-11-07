@@ -1,4 +1,10 @@
+**/__pycache__/
+*.ncu-rep
 
 # pixi environments
 .pixi
 *.egg-info
+
+# output file directories
+_profile_outputs/
+_warp_source_cache/
